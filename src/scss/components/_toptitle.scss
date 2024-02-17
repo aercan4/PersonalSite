@@ -1,0 +1,40 @@
+.toptitle {
+    font-size: var(--font-size-toptitle);
+    line-height: 1.45em;
+    //margin-bottom: 0.75em;
+    font-weight: 800;
+    color: $c-title;
+    display: flex;
+    align-items: center;
+    
+  
+    &--green {
+      color: $c-green;
+    }
+    
+    &--light-gray{
+      color: rgba($c-black, .6);
+    }
+  
+    &--blue {
+      color: $c-blue;
+    }
+    &--dark-blue{
+      color: $c-dark-blue;
+    }
+  
+    &--white {
+      color: #FFF;
+    }
+  
+    &--lg{
+      font-size: 2rem;
+    }
+  
+    &--sm {
+      font-size: 1.6rem;
+    }
+    &--xsm{
+      font-size: 1.2rem;
+    }
+  }

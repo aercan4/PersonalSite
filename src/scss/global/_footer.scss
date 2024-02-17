@@ -1,0 +1,48 @@
+.footer {
+  width: 100%;
+  padding-top: 10rem;
+  position: relative;
+  padding-bottom: 5rem;
+  @include bp(mobile){
+    padding: 5rem 0;
+    padding-bottom: 4rem;
+  }
+
+  &-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+      height: 5rem;
+      object-fit: contain;
+    }
+    @include bp(mobile){
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+  &-copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    margin-top: 5rem;
+    border-top: 1px solid rgba($c-white, .2);
+    @include bp(tablet){
+      justify-content: center;
+    }
+    @include bp(mobile){
+      padding-top: 3rem;
+    }
+    &-link{
+      font-size: 1.6rem;
+      color: #fff;
+      @include bp(tablet){
+        display: none;
+      }
+      &:hover{
+        color: $c-green;
+      }
+    }
+  }
+}

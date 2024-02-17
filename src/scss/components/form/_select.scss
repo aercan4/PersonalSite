@@ -1,0 +1,77 @@
+.select-outer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 3rem;
+/*  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    border-radius: 1rem 0 0 1rem;
+    border: 1px solid #DCE6EA;
+    border-right: 0;
+    font-size: 1.5rem;
+    color: $c-black;
+
+    & + select {
+      border-bottom-left-radius: 0 !important;
+      border-top-left-radius: 0 !important;
+
+    }
+  }*/
+
+  select {
+    width: 100%;
+    appearance: none;
+    //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.788 8'%3E%3Cpath fill='%23373941' transform='translate(0 -63.953)' d='M5.758,64.088a.323.323,0,0,0-.258-.135H.367a.323.323,0,0,0-.258.135.523.523,0,0,0,0,.639l2.567,3.179a.314.314,0,0,0,.516,0l2.567-3.179a.523.523,0,0,0,0-.639Z'%3E%3C/path%3E%3C/svg%3E");
+
+    background: url("../img/icon-triangle-down.svg") no-repeat;
+
+    background-position-x: calc(100% - 9px);
+    background-position-y: 50%;
+    background-size: 1.2rem;
+    font-size: 2rem;
+    padding-right: 2.6rem;
+    transition: $transition;
+    height: 5rem;
+    border: 0;
+    border-bottom: 1px solid $c-border;
+    border-radius: 0;
+    font-weight: 600;
+    color: $c-black;
+    &:disabled {
+      opacity: .5;
+    }
+
+    &:invalid {
+      color: rgba($c-black, .4);
+    }
+
+    &:focus {
+      outline: 0;
+      border-color: #FFA134;
+    }
+
+    @include bp(mobile-m-small) {
+      //background-position-x: calc(100%);
+    }
+
+    option {
+      padding: 5px;
+    }
+  }
+  &--white{
+    select{
+      background-color: #FFF;
+      border: 1px solid $c-divider;
+      //border-radius: 4rem;
+      padding-left: 2rem;
+      height: 5rem;
+    }
+  }
+  &.input-error {
+    border: none !important;
+    margin-bottom: 1.5rem !important;
+  }
+}

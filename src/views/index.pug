@@ -1,0 +1,130 @@
+extends blocks/layout
+block vars
+    - var index = true;
+    - var header = true;
+    - var footer = true;
+    - var quickContact = true;
+
+block append head
+    title Abdurrahman Ercan
+    meta(name='description', content="Absolute peace of mind for product and software development")
+    // Facebook
+    meta(property='og:title' content='Crea, Inc.')
+    meta(property='og:description' content="Absolute peace of mind for product and software development")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    // Twitter
+    meta(property='twitter:url' content='#')
+    meta(property='twitter:title' content='Crea, Inc.')
+    meta(property='twitter:description' content="Absolute peace of mind for product and software development")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    
+block content
+    .index
+        
+        .index-intro 
+            .container 
+                .hero
+                    h1.title.title--xl.title--green I am Abdurrahman, i work as a
+                        span.colored-white  Frontend Developer.  
+                    p.text.text--white.mt-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione doloribus enim cumque, perferendis a inventore laudantium suscipit ex rerum porro, ducimus eius, aspernatur autem dolore voluptate harum praesentium. Quia?
+        .index-content 
+            section.job-slider-wrapper
+                .container 
+                    .section-head
+                        .section-head-left
+                            h3.title.title--green.title--md My Works
+                        .job-slider-nav.swiper-nav.swiper-arrows
+                            button.btn.btn--transparent-white.btn--i.nav-prev.job-slider-prev
+                                span.btn__icon.icon-font
+                                    svg.icon.icon-font
+                                        use(xlink:href='assets/icons/icons.svg#icon-left')
+                            button.btn.btn--transparent-white.btn--i.nav-next.job-slider-next
+                                span.btn__icon.icon-font
+                                    svg.icon.icon-font
+                                        use(xlink:href='assets/icons/icons.svg#icon-right')
+
+                .container
+                    .job-slider.swiper-container.visible-active
+                        .swiper-wrapper
+                            .swiper-slide
+                                a(href="#").job-item 
+                                    .job-item-img
+                                        img(src="assets/img/crea-logo.svg")
+                                    .job-item-content 
+                                        .link.link--i-right.link--black
+                                            span.link__text Visit 
+                                            span.link__icon.icon-font
+                                                svg.icon.icon-font
+                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                            .swiper-slide
+                                a(href="#").job-item 
+                                    .job-item-img
+                                        img(src="assets/img/impladent-logo.svg")
+                                    .job-item-content 
+                                        .link.link--i-right.link--black 
+                                            span.link__text Visit 
+                                            span.link__icon.icon-font
+                                                svg.icon.icon-font
+                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                            .swiper-slide
+                                a(href="#").job-item 
+                                    .job-item-img
+                                        img(src="assets/img/mabturkey-logo.svg")
+                                    .job-item-content 
+                                        .link.link--i-right.link--black 
+                                            span.link__text Visit 
+                                            span.link__icon.icon-font
+                                                svg.icon.icon-font
+                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                            .swiper-slide
+                                a(href="#").job-item 
+                                    .job-item-img
+                                        img(src="assets/img/tss-logo.svg")
+                                    .job-item-content 
+                                        .link.link--i-right.link--black 
+                                            span.link__text Visit 
+                                            span.link__icon.icon-font
+                                                svg.icon.icon-font
+                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                            .swiper-slide
+                                a(href="#").job-item 
+                                    .job-item-img
+                                        img(src="assets/img/trifles-logo.svg")
+                                    .job-item-content 
+                                        .link.link--i-right.link--black 
+                                            span.link__text Visit 
+                                            span.link__icon.icon-font
+                                                svg.icon.icon-font
+                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                            .swiper-slide
+                                a(href="#").job-item 
+                                    .job-item-img
+                                        img(src="assets/img/tekclinic-logo.png")
+                                    .job-item-content 
+                                        .link.link--i-right.link--black 
+                                            span.link__text Visit 
+                                            span.link__icon.icon-font
+                                                svg.icon.icon-font
+                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                            .swiper-slide
+                                a(href="#").job-item 
+                                    .job-item-img
+                                        img(src="assets/img/utit-logo.svg")
+                                    .job-item-content 
+                                        .link.link--i-right.link--black 
+                                            span.link__text Visit 
+                                            span.link__icon.icon-font
+                                                svg.icon.icon-font
+                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                        .loadmore
+                            a(href="works.html").btn.btn--transparent-white.mt-6
+                                span.btn__text Tümünü Gör
+                                
+                
+         
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+.box{
+    background: #fff;
+    padding: 5rem;
+    border-radius: 1rem;
+    @include bp(mobile){
+        padding: 2.5rem;
+    }
+}

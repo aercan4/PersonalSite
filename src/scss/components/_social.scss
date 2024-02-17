@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 3rem;
+
+  &__item {
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    transition: $transition;
+    &:hover{
+      color: $c-green;
+    }
+
+    & + & {
+      margin-left: 4rem;
+     
+    }
+
+    
+
+
+  }
+}

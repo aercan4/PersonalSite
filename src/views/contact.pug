@@ -1,0 +1,85 @@
+extends blocks/layout
+block append vars 
+    - var footer = true;
+    - var header = true;
+    - var quickContact = true;
+block append head
+    title Contact
+    meta(name='description', content="We genuinely enjoy talk through your projects, ideas and challenges to help you solve valuable problems")
+    // Facebook
+    meta(property='og:title' content='Contact - Crea, Inc.')
+    meta(property='og:description' content="We genuinely enjoy talk through your projects, ideas and challenges to help you solve valuable problems")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    // Twitter
+    meta(property='twitter:url' content='#')
+    meta(property='twitter:title' content='Contact - Crea, Inc.')
+    meta(property='twitter:description' content="We genuinely enjoy talk through your projects, ideas and challenges to help you solve valuable problems")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+
+block content
+    .pageid 5
+    .subpage.contact
+        .subpage-content
+            .container
+                .contact-grid
+                    .contact-grid-left
+                        h1.title.title--green.title--lg.title--w-shape Behind good code, there is good communication. I would like to
+                            span.colored-white  hear from you.
+                            img(src="assets/img/arrow-shape.svg")
+                    .contact-grid-right     
+                        .box
+
+
+                            form(id="contactForm" method="").validateForm.contact-form
+                                h5.contact-form-title.title.title--black.title--sm.mb-3 Contact Me
+                                .input-row
+                                    .input-group
+                                        label.input__title Your Name
+                                        input(name="referance" type="text" placeholder="Organization / Person" required  ).input
+                                    .input-group
+                                        label.input__title Your Surname
+                                        input(name="namesurname" type="text" placeholder="Name Surname" required  ).input
+
+                                .input-row
+                                    .input-group
+                                        label.input__title E-mail
+                                        input(name="mail" type="text" placeholder="E-mail address" required ).input
+                                    .input-group
+                                        label.input__title Your Company/Organization
+                                        input(name="company" type="text" placeholder="Company/Organization" required ).input
+                                .textarea
+                                    label.input__title Message
+                                    textarea(name="message" type="text" rows=""  placeholder="Tell us about your project/start-up/company/idea" required )
+
+                                
+                                .checkbox-wrapper
+                                    label.checkbox
+                                        input.checkbox__input(type='checkbox' name="checkbox" required)
+                                        span.checkbox__toggle
+                                        .checkbox-content
+                                            .checkbox__title Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                                button.btn.btn--full.btn--green.fw-600
+                                    span.btn__text SUBMIT FORM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

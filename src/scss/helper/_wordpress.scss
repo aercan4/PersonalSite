@@ -1,0 +1,239 @@
+input.wpcf7-not-valid,
+textarea.wpcf7-not-valid {
+  border-bottom: 1px solid #cc0000 !important;
+  //margin-bottom: 1.5rem !important;
+  & ~ .input__title{
+    //font-size: 5rem;
+    //top: 45%;
+  }
+}
+
+.wpcf7-form-control-wrap {
+  border-radius: 0 !important;
+}
+
+.grecaptcha-badge {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.heateor_sss_sharing_ul {
+  display: flex;
+
+  a:not(:last-child) {
+    margin-right: 1rem !important;
+  }
+  a{
+    path{
+      transition: $transition;
+    }
+    &:hover{
+      span{
+        svg{
+          path{
+            //fill: $c-black;
+            //background: #FFFFFF;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.heateor_sss_svg {
+  width: 5.5rem !important;
+  height: 5.5rem !important;
+  font-size: 2rem !important;
+  //padding: 1rem !important;
+  border-color: #E0E0E0 !important;
+  color: $c-black !important;
+  transition: $transition;
+  &:hover{
+    svg{
+      path{
+        
+      }
+    }
+  }
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+  padding: 2rem;
+  color: #ffffff;
+  font-weight: 500;
+  display: none;
+  background: #8d0000;
+  border: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 1rem !important;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  padding: 0 2rem;
+  color: $c-black;
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: flex;
+  background: $c-green;
+  border: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0.8rem !important;
+}
+
+.modal-map .acf-map {
+  height: 100% !important;
+}
+
+.wpcf7-form-control-wrap {
+  .wpcf7-list-item-label{
+    display: flex;
+    align-items: center;
+  }
+}
+
+//.acf-map {
+//  div[title] {
+//    img {
+//      max-width: 20px !important;
+//    }
+//  }
+//}
+
+//.contact-info-map .acf-map {
+//  height: 100% !important;
+//}
+.wpcf7-not-valid-tip {
+  font-size: 1.2rem;
+  font-weight: 500;
+  transform: translateY(-10px);
+}
+span {
+  &.wpcf7-not-valid-tip{
+    font-size: 1.2rem;
+    font-weight: 500;
+    transform: translateY(5px);
+  }
+
+}
+.wpcf7-form-control{
+  //border: 1px solid #cc0000 !important;
+}
+
+
+.grecaptcha-badge {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+.swal2-popup{
+  padding: 3rem !important;
+}
+.swal2-title{
+  font-family: $font-family-base !important;
+  color: #031B3B !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+}
+.swal2-icon{
+  margin: 0 auto !important;
+}
+.wpcf7-spinner{
+  //display: none;
+}
+.wpcf7-list-item{
+  label{
+    display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  input{
+    // height: 3rem;
+    // width: 3rem;
+    // //accent-color: #DAE1FD;
+    // accent-color: white;
+    cursor: pointer;
+    //clip-path: circle(74% at 74% 50%);
+  }
+  }
+  &-label{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    user-select: none;
+    line-height: 1.3em;
+    margin-left: 2rem;
+    height: 3rem;
+  }
+}
+.wpcf7-form-control.wpcf7-acceptance{
+  input{
+
+  }
+
+}
+.wpcf7-acceptance{
+
+
+
+  input[type="checkbox"] {
+     position: relative;
+     cursor: pointer;
+     padding: 0;
+ }
+ input[type="checkbox"]:before {
+     content: '';
+     margin-right: 10px;
+     display: inline-block;
+     width: 3rem;
+     height: 3rem;
+     background: #DAE1FD;
+     border-radius: 50%;
+     left: -0.6rem;
+    top: -0.6rem;
+    position: absolute;
+ }
+ 
+ 
+  input[type="checkbox"]:checked:before {
+     background: #DAE1FD;
+     border-color: #DAE1FD;
+ }
+  input[type="checkbox"]:disabled {
+     color: #b8b8b8;
+     cursor: auto;
+ }
+  input[type="checkbox"]:disabled:before {
+     box-shadow: none;
+     background: #ddd;
+ }
+  input[type="checkbox"]:checked:after {
+     content: '';
+    //  position: absolute;
+    //  left: 5px;
+    //  top: 8px;
+    //  background: white;
+    //  width: 2px;
+    //  height: 2px;
+    //  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    //  transform: rotate(45deg);
+    background-image: url("../img/blue-tik.svg");
+    background-size: 1.6rem;
+    background-repeat: no-repeat;
+    background-position: 15% 18%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1em;
+    height: 1em;
+    font-size: 3rem;
+ }
+ 
+ 
+  span.wpcf7-list-item{
+    margin: 1rem 0 1rem 0;
+ }
+ 
+ }

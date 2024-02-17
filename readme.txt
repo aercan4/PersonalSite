@@ -1,0 +1,1 @@
+Projeyi indirin, terminali açıp npm install yazın. Yüklenme işlemi tamamlandıktan sonra yine terminale gulp yazıp projeyi ayağa kaldırabilirsiniz. Html çıktıları /dist içerisinde olacaktır.

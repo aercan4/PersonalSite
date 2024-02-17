@@ -1,0 +1,206 @@
+.swiper-nav {
+  pointer-events: none;
+
+  .btn {
+    pointer-events: all;
+    // border: 1px solid $c-black;
+    // background: transparent;
+    // &:hover {
+    //   background: $c-red;
+    //   color: #fff;
+    //   border: 1px solid $c-red;
+    // }
+    // &.nav-next {
+    //   margin-left: 2rem;
+    // }
+    // &.nav-prev {
+    //   margin-right: 2rem;
+    // }
+  }
+
+}
+
+.swiper-pagination {
+  width: auto !important;
+  pointer-events: all;
+  &-bullet {
+    width: rem(25);
+    height: rem(4);
+    background: rgba($c-white, .20);
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: all;
+    transition: $transition;
+    margin: 0 rem(7) !important;
+    border-radius: 0;
+    @include bp(mobile){
+      height: rem(3);
+      margin: 0 rem(4) !important;
+    }
+
+    &-active {
+      background: $c-white;
+
+      // &-prev {
+      //   transform: scale(1);
+
+      //   &-prev {
+      //     transform: scale(1);
+      //   }
+      // }
+
+      // &-next {
+      //   transform: scale(1);
+
+      //   &-next {
+      //     transform: scale(1);
+      //   }
+      // }
+    }
+  }
+  &.red{
+    .swiper-pagination-bullet{
+      background: rgba($c-first, .1);
+      &-active{
+        background: $c-red;
+      }
+    }
+  }
+}
+
+.swiper-button {
+  &:hover {
+    .btn {
+      color: #fff !important;
+    }
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    color: rgba($c-text, 0.6);
+    @include bp(mobile) {
+      width: 30px;
+      height: 30px;
+      font-size: 8px;
+    }
+  }
+
+  &-disabled {
+    border: 1px solid #e0e0e0 !important;
+    background: transparent !important;
+    color: #e0e0e0 !important;
+    .btn__icon {
+      color: #e0e0e0;
+    }
+    &:hover{
+        color: #e0e0e0 !important;
+    }
+  }
+
+  &-next {
+    width: unset;
+    z-index: 4;
+
+    &::after {
+      content: unset;
+    }
+  }
+
+  &-prev {
+    width: unset;
+    z-index: 4;
+
+    &::after {
+      content: unset;
+    }
+  }
+}
+
+.swiper-container.visible-active {
+  overflow: visible;
+
+  .swiper-slide {
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+    transition-property: transform, opacity;
+
+    &.is-visible {
+      opacity: 1;
+      transition: 0.3s;
+      transition-property: transform, opacity;
+      transform: translateZ(0) scale(1, 1);
+      pointer-events: all;
+    }
+  }
+}
+
+.swiper-arrows {
+  display: flex;
+  font-size: 3rem;
+  z-index: 2;
+  width: auto;
+  height: 7rem;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  gap: 2rem;
+ 
+
+  .swiper-button-prev {
+    left: unset;
+    border-radius: var(--button-br) 0 0 var(--button-br);
+    margin-right: 1px;
+
+    &:not(.swiper-button-disabled):hover,
+    &:not(.swiper-button-disabled):focus {
+      span {
+        transform: translateX(-3px) scale(1, 1) translateZ(0);
+      }
+    }
+  }
+
+  .swiper-button-next {
+    border-radius: 0 var(--button-br) var(--button-br) 0;
+
+    &:not(.swiper-button-disabled):hover,
+    &:not(.swiper-button-disabled):focus {
+      span {
+        transform: translateX(3px) scale(1, 1) translateZ(0);
+      }
+    }
+  }
+
+  
+
+
+
+ 
+
+
+}
+
+.fade-slider {
+  overflow: visible !important;
+
+  .swiper-slide {
+    z-index: -1;
+    opacity: 0 !important;
+
+    @include bp(tablet) {
+      height: 0;
+      overflow: hidden;
+    }
+
+    &.is-visible {
+      z-index: 1;
+      opacity: 1 !important;
+      pointer-events: all;
+      @include bp(tablet) {
+        height: auto;
+        overflow: visible;
+      }
+    }
+  }
+}
+

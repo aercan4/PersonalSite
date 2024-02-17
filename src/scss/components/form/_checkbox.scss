@@ -1,0 +1,150 @@
+// Tick Checkbox
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  font-family: $font-family-base;
+  position: relative;
+  margin: 2rem auto;
+  
+  @include bp(tablet-small){
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  @include bp(mobile){
+    align-items: flex-start;
+  }
+
+  
+
+ 
+
+  &__input {
+    -webkit-appearance: none;
+
+    -moz-appearance: none;
+    visibility: hidden;
+    width: 0;
+
+    &:checked {
+
+      & ~ span {
+
+        background-image: url("../img/tik.svg");
+      }
+
+      & ~ .tick-checkbox-content .tick-checkbox__title {
+        color: $c-title;
+      }
+    }
+
+    &:not(:checked) {
+      //
+      //& + span {
+      //  background-color: $c-first;
+      //  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.788 8'%3E%3Cpath fill='%23fff' d='M9.146 0L3.722 5.477 1.489 3.244 0 4.733l3.722 3.775 6.913-6.966z'%3E%3C/path%3E%3C/svg%3E");
+      //  border-color: transparent !important;
+      //
+      //}
+
+      &:hover ~ .tick-checkbox-content .tick-checkbox__title {
+        color: rgba($c-title, .8);
+      }
+    }
+  }
+ 
+  
+  &--big{
+    .checkbox__toggle{
+      border-radius: .2rem;
+      margin-right: 2rem;
+    }
+  }
+
+  &--radio {
+    .checkbox {
+      &__input {
+        & ~ span {
+          //background: #EDE9E1;
+          background: transparent;
+          position: relative;
+          border: 1px solid $c-blue;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-48%, -52%);
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background: $c-blue;
+            transition: $transition;
+            opacity: 0;
+            font-size: 10px;
+          }
+        }
+
+        &:checked {
+          & ~ span {
+            box-shadow: 0 0 0 2px red;
+            background: $c-bg;
+            &::after {
+              opacity: 1;
+            }
+          }
+
+        }
+      }
+
+      &__toggle {
+        border-radius: 50%;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__toggle {
+    outline: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 6px;
+    display: inline-flex;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #DDDEE1;
+    flex-shrink: 0;
+    transition: $transition-fast;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: .5em;
+    font-size: 3rem;
+    @include bp(tablet-small){
+      font-size: 20px;
+    }
+  }
+
+  &-content {
+    margin-left: 2rem;
+    width: 100%;
+  }
+
+  &__title {
+    color: $c-black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    user-select: none;
+    line-height: 1.3em;
+    transition: $transition
+  }
+
+}
+
+

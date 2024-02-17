@@ -1,0 +1,36 @@
+.index {
+    overflow: hidden;
+    &-intro {
+        padding-top: 5rem;
+        overflow: hidden;
+        padding-bottom: 20rem;
+        @include bp(mobile){
+            padding-top: 0;
+            padding-bottom: 5rem;
+        }
+        .title{
+            max-width: 65%;
+            @include bp(tablet){
+                max-width: 100%;
+            }
+        }
+        .text{
+            max-width: 70%;
+            @include bp(mobile){
+                max-width: 100%;
+                margin-top: 5rem;
+            }
+        }
+    }
+    &-content{
+        
+        .job-slider-wrapper{
+            .job-slider{
+                padding: 9rem 0;
+                @include bp(mobile){
+                    padding: 4rem 0;
+                }
+            }
+        }
+    }
+}

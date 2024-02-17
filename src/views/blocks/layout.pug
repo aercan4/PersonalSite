@@ -1,0 +1,126 @@
+doctype html
+html(lang="en")
+    head
+        block head
+            meta(charset='UTF-8')
+            meta(http-equiv='X-UA-Compatible', content='IE=edge')
+            meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+            //- // Facebook
+            //- meta(property='og:image' content='assets/img/thumb.jpg')
+            //- // Twitter
+            //- meta(property='twitter:image' content='assets/img/thumb.jpg')
+            
+            link(rel='icon' type='image/png' sizes='16x16' href='assets/img/favicon.png')
+            link(rel='apple-touch-icon' sizes='180x180' href='assets/img/favicon/favicon.png')
+            link(rel='icon' type='image/png' sizes='32x32' href='assets/img/favicon/favicon.png')
+            link(rel='icon' type='image/png' sizes='16x16' href='assets/img/favicon/favicon.png')
+            //link(rel='manifest' href='assets/img/favicon/site.webmanifest')
+            //link(rel='mask-icon' href='assets/img/favicon/safari-pinned-tab.svg' color='#5bbad5')
+            meta(name='msapplication-TileColor' content='#da532c')
+            meta(name='theme-color' content='#ffffff')
+            script.
+        block styles
+
+            link(href="https://unpkg.com/swiper@7/swiper-bundle.min.css",rel='stylesheet')
+
+
+            link(href="assets/css/style.css",rel='stylesheet')
+
+    block vars
+        - var header = true;
+        - var footer = true;
+        
+    body
+
+        block header
+            if header
+                .header-wrapper
+                    header.header
+                        .header-left
+                            a(href="./")
+                                img(src="assets/img/my-logo.png").logo
+
+                            a(href="./").link.link--white
+                                span.link__text Abdurrahman Ercan
+                            
+                        .header-right
+                            .header-menu
+                                a(href="about.html").header-menu-link About Me
+                                a(href="works.html").header-menu-link My Works
+                                a(href="kvkk.html").header-menu-link.mobile-link KVKK
+                            .header-right-button
+                                a(href="contact.html").btn.btn--transparent-white
+                                    span.btn__text Contact
+                        .header-menu-opener.js-open-menu
+                            span
+                            span
+                            span
+                            
+
+
+
+        // İçerik Başlangıç
+        block content
+
+
+
+        // İçerik Bitiş
+        
+
+
+            
+        block footer
+            
+            
+            if quickContact
+                .quick-contact-wrapper
+                    .container
+                        .quick-contact
+                            h3.title.title--green.title--md What are you working on?
+                            p.text.text--white.text--center.mt-2 Let's have a conversation! I'd love to hear about what you're working on and find a way to work
+                            a(href="#").btn.btn--green.btn--i-left.fw-600
+                                span.btn__icon.icon-font
+                                    svg.icon.icon-font
+                                        use(xlink:href='assets/icons/icons.svg#icon-message')
+                                span.btn__text Chat
+
+            
+            if footer
+                footer.footer
+                    .container 
+                        .footer-content 
+                            a(href="./")
+                                img(src="assets/img/my-logo.png").logo
+                            .footer-social 
+                                include components/social
+                        .footer-copyright 
+                            p.text.footer_copyright_text.text--white Developed By Abdurrahman Ercan...
+                            .footer-copyright-links 
+                                a(href="kvkk.html").footer-copyright-link KVKK
+                        
+                        
+                    
+      
+
+
+
+
+
+
+
+
+
+
+        block scripts
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+            script(src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js")
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8-beta.17/jquery.inputmask.min.js")
+
+
+            script(src='https://unpkg.com/swiper@7/swiper-bundle.min.js')
+
+
+            script(src="assets/js/all.js")
+            
+
+

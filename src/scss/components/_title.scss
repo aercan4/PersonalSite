@@ -1,0 +1,257 @@
+.title {
+  font-style: normal;
+  line-height: 1.6;
+  color: $c-title;
+  font-weight: bold;
+
+  &--second {
+    font-family: $font-family-second;
+  }
+
+  &--underlined {
+    text-decoration: underline;
+  }
+
+
+
+  span.colored-black {
+    color: $c-black;
+  }
+  span.colored-blue {
+    color: $c-blue;
+  }
+  span.colored-purple{
+    color: $c-purple;
+  }
+  span.colored-white{
+    color: $c-white !important;
+  }
+  span.gradient {
+    background: transparent linear-gradient(228deg, #fff 0%, $c-green 70%, $c-green 100%) 0% 0% no-repeat padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 15 linear infinite alternate;
+    background-size: 100%;
+  }
+
+ 
+  
+  &--black {
+    color: $c-black;
+  }
+  &--light-black {
+    color: rgba($c-black, 0.9);
+  }
+  &--dark-blue {
+    color: $c-dark-blue;
+  }
+
+  &--green {
+    color: $c-green;
+  }
+  &--white {
+    color: #fff !important;
+  }
+  &--blue {
+    color: $c-blue !important;
+  }
+  &--gray {
+    color: #6a7190 !important;
+  }
+  &--light {
+    color: rgba($c-black, 0.6) !important;
+  }
+  &--x-light {
+    color: rgba($c-black, 0.4) !important;
+  }
+  &--xxxl {
+    font-size: var(--font-size-title--xxxl);
+    line-height: 1em;
+  }
+
+  &--xxl {
+    font-size: var(--font-size-title--xxl);
+    line-height: 1.1em;
+  }
+
+  &--xl {
+    font-size: var(--font-size-title--xl);
+    line-height: 1.4em;
+  }
+
+  &--lg {
+    font-size: var(--font-size-title--lg);
+    //line-height: 1.6em;
+    line-height: 1.4em;
+  }
+
+  // &--mlg {
+  //   font-size: var(--font-size-title--mlg);
+  // }
+
+  &--xmd {
+    font-size: var(--font-size-title--xmd);
+  }
+
+  &--md {
+    font-size: var(--font-size-title--md);
+  }
+
+  &--sm {
+    font-size: var(--font-size-title--sm);
+  }
+
+  &--xsm {
+    font-size: var(--font-size-title--xsm);
+    line-height: 1.6em;
+  }
+
+  &--xs {
+    font-size: var(--font-size-title--xs);
+    line-height: 1.6em;
+  }
+
+  &--xxs {
+    font-size: var(--font-size-title--xxs);
+    line-height: 1.6em;
+  }
+  &--xxs {
+    font-size: var(--font-size-title--xxs);
+    line-height: 1.6em;
+  }
+  &--xxxs {
+    font-size: var(--font-size-title--xxxs);
+    line-height: 1.6em;
+  }
+  &--4xs {
+    font-size: var(--font-size-title--4xs);
+    line-height: 1.6em;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--w-shape {
+    position: relative;
+    img{
+      position: absolute;
+      right: 0;
+      bottom: -2rem;
+      transform: translateY(100%) rotate(-10deg);
+    }
+  }
+  &--w-icon {
+    display: flex;
+    align-items: flex-start;
+    span {
+      order: -1;
+    }
+    .title__icon {
+      font-size: 2rem;
+      margin-right: 2.5rem;
+      color: #ff9d5f;
+    }
+  }
+}
+
+.text {
+  font-size: var(--font-size-text);
+  line-height: 1.7em;
+  font-weight: normal;
+  color: $c-text;
+
+  strong {
+    font-weight: 500;
+    color: $c-black;
+  }
+
+  &--black {
+    color: $c-black !important;
+  }
+
+  &--x-light {
+    color: rgba($c-black, 0.4);
+  }
+  &--light {
+    color: rgba($c-black, 0.5);
+  }
+  &--medium-light {
+    color: rgba($c-black, 0.8);
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--light-white {
+    color: rgba(#fff, 0.6);
+  }
+  &--medium-white {
+    color: rgba(#fff, 0.75);
+  }
+  &--xxl {
+    font-size: 2.4rem;
+    @include bp(mobile) {
+      font-size: 2rem;
+    }
+  }
+  &--xl {
+    font-size: 2.2rem;
+    @include bp(mobile) {
+      font-size: 1.9rem;
+    }
+  }
+  &--lg {
+    font-size: 2.2rem;
+    @include bp(mobile) {
+      font-size: 2rem;
+    }
+  }
+  &--mlg {
+    font-size: 2rem;
+  }
+
+  &--md {
+    font-size: calc(var(--font-size-text) * 0.9);
+  }
+
+  &--sm {
+    font-size: 1.7rem;
+  }
+  &--xs {
+    font-size: 1.2rem;
+  }
+  &--dark-gray {
+    color: $c-dark-gray;
+  }
+  &--gray {
+    color: $c-light-gray;
+  }
+  &--light-gray {
+    color: rgba($c-dark-gray, 0.8);
+  }
+  &--blue {
+    color: $c-blue;
+  }
+  &--center {
+    text-align: center;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: top top;
+  }
+  30% {
+    background-position: 70% top;
+    background-size: 300%;
+  }
+  60% {
+    background-position: top 100%;
+    background-size: 500%;
+  }
+  100% {
+    background-position: top bottom;
+    background-size: 150%;
+  }
+}

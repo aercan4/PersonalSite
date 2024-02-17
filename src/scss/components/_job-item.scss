@@ -1,0 +1,51 @@
+.job-item {
+    display: block;
+    background: #fff;
+    &:hover {
+        .link {
+            color: $c-green;
+            &__text {
+                &::after {
+                    width: 100%;
+                }
+            }
+            .link__icon {
+                transform: scale(1.2);
+            }
+        }
+    }
+    &-img {
+        height: 16rem;
+        padding: 6rem;
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        @include bp(mobile) {
+            height: 12rem;
+            padding: 4rem;
+            width: 17rem;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &-content {
+        border-top: 1px solid $c-border;
+        padding: 3rem;
+        @include bp(mobile){
+            padding: 2rem;
+        }
+    }
+
+    &--big {
+        .job-item-img {
+            padding: 2rem;
+            height: 20rem;
+            @include bp(mobile){
+                padding: 1rem;
+            }
+        }
+    }
+}

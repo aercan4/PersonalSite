@@ -1,0 +1,341 @@
+/* Colors */
+$c-bg: #19262f;
+
+$c-blue: #278EFF;
+
+
+$c-white: #ffffff;
+$c-light: #E1E7FB;
+$c-black: #030303;
+$c-dark-black : #1c2c35;
+$c-gray: #9f9f9f;
+$c-dark-gray: #6A7190;
+$c-light-gray: #0303031A;
+$c-red: #EF4C4C;
+$c-purple: #bd8fbd;
+$c-green: #9bedad;
+$c-green-light: #45CB8826;
+$c-dark-blue: #007AFF;
+$c-light-blue: #DEEEFF;
+
+
+
+
+
+$c-text: #4D4D4D;
+$c-text-light: rgba($c-black,.75);
+$c-border: rgba(#354261, .1);
+$c-border-white: rgba(#fff, .4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+$c-first: $c-blue;
+$c-title: #1F263A;
+$c-divider: rgba($c-black, .1);
+$c-divider-dark: rgba($c-black, .2);
+$c-divider-light: rgba($c-black, .05);
+$c-text--full: red;
+$c-yellow: yellow;
+$c-orange-dark: #FFA95D;
+$c-second: $c-black;
+$c-dark-bg: red;
+$c-navy-blue: red;
+$c-navy-blue2: red;
+
+
+$c-button-light: #f7f8fa;
+$c-button-light--focus: #c5cdd6;
+$c-shadow: rgba(#32325D, .1);
+$c-fb-blue: #5D82C7;
+
+
+$c-breadcrumb-icon: #343230;
+$c-default-page-title: #CA5757;
+
+
+/* Font Families*/
+$font-family-base: 'Gilmer', sans-serif;
+$font-family-second: 'Barlow', sans-serif;
+/* Box Shadows */
+$button-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08), 0px 4px 4px rgba(50, 50, 93, 0.11);
+$button-shadow--hover: 0px 7px 14px rgba(50, 50, 93, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.08);
+$box-shadow: 0px 0px 20px #20428907;
+$box-shadow-card: 0px 40px 50px -20px rgba(3,43,92,0.1);
+
+/* Button */
+
+/* Normal Padding */
+
+$transition: .3s cubic-bezier(.29, .13, .27, .74);
+$transition-normal: .25s ease-in-out;
+$transition-fast: .2s cubic-bezier(.29, .13, .27, .74);
+$transition-slow: .6s cubic-bezier(.21,1.09,1,.99);
+:root {
+  --font-size-title--xxxl: 9.2rem;
+  --font-size-title--xxl: 8.2rem;
+  --font-size-title--xl: 5.6rem;
+  --font-size-title--lg: 4.4rem;
+  --font-size-title--md: 4rem;
+  --font-size-title--sm: 2.4rem;
+  --font-size-title--xsm: 2.2rem;
+  --font-size-title--xs: 2rem;
+  --font-size-title--xxs: 1.8rem;
+  --font-size-title--xxxs: 1.5rem;
+
+
+  --font-size-toptitle: 2rem;
+
+
+
+
+  --font-size-text: 1.8rem;
+  --box-padding-lr: 7.6rem;
+  --box-padding-tb: 7.6rem;
+
+
+
+
+  --box-radius: 3.6rem;
+  --input-height: 6.4rem;
+
+  --container-small-padding: 16rem;
+  --tab-color: #{$c-blue};
+  --nav-height: 10rem;
+  --content-color: #{$c-text};
+
+  --swiper-theme-color: $c-black;
+  --swiper-pagination-color: $c-black;
+  --menu-item-color: 255, 255, 255;
+  --subpage-items-color: 255, 255, 255;
+
+
+
+  --header-height: 11rem;
+  --title-padding: 1.5rem;
+  --title-radius: 2.2rem;
+  --button-br: 1.8rem;
+  --content-gutter: 10rem;
+  --container-gutter: 16px;
+  --container-pusher: calc((100vw - var(--container-width)) / 2);
+
+
+  --container-width: 140rem;
+  --container-medium-padding: 9rem;
+  --container-small-width: 145rem;
+  --container-medium-width: 150rem;
+  --container-xsmall-width: 132rem;
+
+  --container-large-padding : 11rem;
+  --activity-image-height: 45rem;
+  --activity-detail-padding: 12.2rem;
+  --news-image-height: 32rem;
+  --news-content-gutter: 13.8rem;
+  --header-item-gutter: 1rem;
+  --intro-slider-duration: 1s;
+  --video-btn-width: 38rem;
+  --box-height: 32rem;
+  --media-detail-gallery-item-height: 50rem;
+  --media-item-height: 50rem;
+  --register-content-padding: 16.4rem;
+  --form-content-padding: 7.2rem;
+  --count-item-padding: 10rem;
+  // 150 * 9px = 1350px -> laptop-s
+  @media (min-width: 576px) {
+    --container-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    --container-width: 720px;
+  }
+  @media (min-width: 992px) {
+    --container-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    --container-width: 1150px;
+    //--container-width: 100rem;
+    
+  }
+  @include bp(r-laptop-s) {
+    --container-width: 145rem;
+  }
+  @include bp(r-laptop) {
+    --container-width: 145rem;
+  }
+  // 170 * 9px = 1530px -> desktop-m
+  @include bp(r-desktop-m) {
+    //--container-width: 120rem;
+  }
+  @include bp(r-desktop-ml) {
+    //--container-width: 155rem;
+    --container-width: 155rem;
+
+  }
+  // @include bp(r-desktop-ml) {
+  //   --container-width: 165rem;
+  // }
+  @include bp(r-desktop-l) {
+    --container-width: 160rem;
+  }
+  @media (min-width: 2561px) {
+    //--container-width: 220rem;
+
+  }
+
+  @include bp(desktop-m) {
+    --container-xsmall-padding: 13.8rem;
+    --container-medium-padding: 9rem;
+    --container-small-width: 145rem;
+    --container-medium-width: 150rem;
+    --container-xsmall-width: 140rem;
+
+  }
+  @include bp(laptop) {
+  }
+  @include bp(laptop-s) {
+    --search-category-width: 200px;
+  }
+
+
+  @include bp(desktop) {
+    --content-gutter: 0;
+    --slider-image-width: 14rem;
+    --font-size-title--xxl: 5.5rem;
+    --font-size-title--xl: 5rem;
+    --font-size-title--mlg: 3.4rem;
+    --font-size-title--xmd: 3.5rem;
+    --font-size-title--md: 3.5rem;
+    --font-size-title--sm: 3rem;
+    --font-size-title--xsm: 2.2rem;
+    --font-size-title--xs: 1.8rem;
+    --font-size-title--xxs: 1.6rem;
+    --font-size-toptitle: 1.8rem;
+    --container-medium-padding: var(--container-gutter);
+    --container-small-padding: var(--container-gutter);
+    --container-large-padding: var(--container-gutter);
+
+    --info-content-gutter: 7rem;
+    --container-xsmall-padding: 8rem;
+    --box-height: 28rem;
+    --media-item-height: 40rem;
+    --news-content-gutter: 8.8rem;
+    --form-content-padding: 6rem;
+    --box-padding-lr: 5.6rem; // buraya yazdım.
+    --box-padding-tb: 5.6rem;
+
+  }
+  @include bp(tablet) {
+    --font-size-title--lg: 3rem;
+    --box-radius: 2.4rem;
+    --font-size-text: 2rem;
+
+    --activity-image-height: 30rem;
+    --container-xsmall-padding: var(--container-gutter);
+    --media-detail-gallery-item-height: 34rem;
+    --media-item-height: 34rem;
+    --register-content-padding: 0rem;
+    --news-image-height: 24rem;
+    --news-content-gutter: 6rem;
+    --form-box-padding-lr: 4rem;
+    --form-box-padding-tb: 3.8rem;
+    --font-size-title--xxxl: 7.2rem;
+    --box-padding-lr: 3.6rem; // buraya yazdım.
+    --box-padding-tb: 3.6rem;
+    --font-size-title--md: 2.5rem;
+    --header-height: 14rem;
+
+  }
+  @include bp(tablet-small-under) {
+    --font-size-title--lg: 2.4rem;
+    --font-size-title--mlg: 2.8rem;
+    --font-size-title--md: 2.3rem;
+    --font-size-title--sm: 2.1rem;
+
+    --font-size-title--xxl: 4rem;
+    --font-size-title--xl: 26px;
+    --font-size-title--xmd: 3rem;
+    --font-size-title--xsm: 2.2rem;
+    --font-size-title--xs: 1.8rem;
+    --font-size-title--xxs: 1.6rem;
+    --font-size-toptitle: 16px;
+    --search-category-width: 100%;
+    --media-detail-gallery-item-height: 26rem;
+    --button-br: 1.4rem;
+    --count-item-padding: 8rem;
+
+
+  }
+  @include bp(tablet-small){
+    --font-size-title--xxl: 4.5rem;
+    //--font-size-title--sm: 2rem;
+    --font-size-title--xl: 4rem;
+    --font-size-title--md: 2.5rem;
+  }
+  @include bp(mobile) {
+    --container-gutter: 25px;
+    --media-detail-gallery-item-height: calc((100vw - (var(--container-gutter) * 2) - 16px) / 2);
+    --news-content-gutter: 3rem;
+    --container-pusher: 0px;
+    --count-item-padding: 6rem;
+    --box-padding-lr: var(--container-gutter); // buraya yazdım.
+    --box-padding-tb: 3.6rem;
+    --font-size-title--xl: 3rem;
+    --form-box-padding-lr: var(--container-gutter);
+    --form-box-padding-tb: 4.8rem;
+    --font-size-title--xxxl: 4.5rem;
+    --find-job-box-tb: 3.2rem;
+    --find-job-box-lr: var(--container-gutter);
+    // --font-size-title--md: 2.4rem;
+     --font-size-title--lg: 2.5rem;
+    --font-size-title--xxl: 4rem;
+    --font-size-text: 1.8rem;
+     --font-size-title--sm: 2.2rem;
+    // --font-size-title--xsm: 2rem;
+     --font-size-title--mlg: 2.3rem;
+     --font-size-title--xsm: 2rem;
+     --card-radius: 2.6rem;
+
+
+
+
+
+  }
+  @include bp(mobile-small) {
+    --activity-image-height: 200px;
+    --activity-detail-padding: var(--container-gutter);
+    --box-height: 24rem;
+    --form-content-padding: 4rem;
+    --form-box-padding-lr: var(--container-gutter);
+    --form-box-padding-tb: 2.8rem;
+    --box-padding-lr: var(--container-gutter); // buraya yazdım.
+    --box-padding-tb: 3.6rem;
+
+  }
+  @include bp(mobile-l-small) {
+    --media-item-height: 30rem;
+  --form-content-padding: var(--container-gutter);
+    --news-content-gutter: var(--container-gutter);
+    --font-size-title--sm: 1.9rem;
+
+  }
+  @include bp(mobile-m-small) {
+    --count-item-padding: 4rem;
+    --form-box-padding-lr: 2rem;
+    --form-box-padding-tb: 2.8rem;
+  }
+  @include bp(mobile-x-small) {
+    --container-gutter: 16px;
+
+  }
+}
+
+

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="154.412" height="154.909" viewBox="0 0 154.412 154.909">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.812" y1="0.541" x2="0" y2="0.535" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2f9dfd"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_51761" data-name="Group 51761" transform="translate(5698.647 -214.28) rotate(90)">
+    <g id="Group_47262" data-name="Group 47262" transform="translate(215.021 5544.941)">
+      <path id="Union_5" data-name="Union 5" d="M34.123,135.4,76.861,92.784l42.475,42.346-17.651,17.6L76.861,127.985,51.775,153ZM93.065,76.364l42.47-42.347,17.652,17.6L128.369,76.363l25.091,25.012-17.658,17.6ZM.267,101.38,25.09,76.631,0,51.62l17.652-17.6L60.395,76.631,17.92,118.977ZM34.123,17.865,51.774.262l24.82,24.749L101.684,0l17.653,17.6L76.594,60.212Z" transform="translate(0 0)" stroke="rgba(255,255,255,0.4)" stroke-width="1" opacity="0.6" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="Path_43685" data-name="Path 43685" d="M59,680.415,40.5,697.336l26.3,24.042-26.024,23.79,18.507,16.916,44.53-40.706Z" transform="translate(174.525 4900.189)" fill="#f9f9f9" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>

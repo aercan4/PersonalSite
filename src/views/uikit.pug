@@ -1,0 +1,189 @@
+extends blocks/layout
+block vars
+    - var index = false;
+    - var header = false;
+    - var footer = false;
+
+block append head
+    title  Uikit Crea
+    style.
+        body {
+            background: #fafafa !important;
+        }
+block content
+    .uikit
+        aside.uikit-categories
+        .uikit-content
+            .uikit-header
+                h1 Uİ-KİT
+            section.uikit-section
+                .uikit-section-header
+                    h1.uikit-section__title Buttons
+                .uikit-section-item
+                    h2.uikit-section-item__title Button Black
+                    .uikit-section-item-content
+                        .uikit-section-item__text btn--black
+                        a(href="#").btn.btn--black
+                            span.btn__text Try Now
+                
+                
+                
+
+                .uikit-section-item
+                    h2.uikit-section-item__title Button md
+                    .uikit-section-item-content
+                        .uikit-section-item__text btn--md
+                        a(href="#").btn.btn--black.btn--md
+                            span.btn__text Bze Ulaşın
+                .uikit-section-item
+                    h2.uikit-section-item__title Button lg
+                    .uikit-section-item-content
+                        .uikit-section-item__text btn--lg
+                        a(href="#").btn.btn--black.btn--lg.btn--i-right
+                            span.btn__text Anasayfaya Dön
+                            span.btn__icon.icon-font
+                                svg.icon.icon-font
+                                    use(xlink:href='assets/icons/icons.svg#icon-phone')
+                
+                .uikit-section-item
+                    h2.uikit-section-item__title Button Only Icon
+                        .uikit-section-item-content
+                            .uikit-section-item__text btn--i
+                            a(href="#").btn.btn--black.btn--i
+                                span.btn__icon.icon-font
+                                    svg.icon.icon-font
+                                        use(xlink:href='assets/icons/icons.svg#icon-right')
+                .uikit-section-item
+                    h2.uikit-section-item__title Button icon left
+                        .uikit-section-item-content
+                            .uikit-section-item__text btn--i-left
+                            a(href="#").btn.btn--black.btn--i-left
+                                span.btn__icon.icon-font
+                                    svg.icon.icon-font
+                                        use(xlink:href='assets/icons/icons.svg#icon-right')
+                                span.btn__text BİZE ULAŞIN
+                .uikit-section-item
+                    h2.uikit-section-item__title Button icon right
+                        .uikit-section-item-content
+                            .uikit-section-item__text btn--i-right
+                            a(href="#").btn.btn--black.btn--i-right
+                                span.btn__text BİZE ULAŞIN
+                                span.btn__icon.icon-font
+                                    svg.icon.icon-font
+                                        use(xlink:href='assets/icons/icons.svg#icon-right')
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            section.uikit-section
+                .uikit-section-header
+                    h1.uikit-section__title Content
+                .uikit-section-item
+                    h2.uikit-section-item__title Toptitle
+                    .uikit-section-item-content
+                        .uikit-section-item__text .toptitle
+                        span.toptitle CONTACT US
+                        span.toptitle.toptitle--orange CONTACT US
+                        span.toptitle.toptitle--white CONTACT US
+                        span.toptitle.toptitle--blue CONTACT
+                .uikit-section-item
+                    h2.uikit-section-item__title Toptitle SM
+                    .uikit-section-item-content
+                        .uikit-section-item__text .toptitle--sm
+                        span.toptitle.toptitle--blue.toptitle--sm CONTACT FORM
+                .uikit-section-item
+                    h2.uikit-section-item__title Title XXL
+                    .uikit-section-item-content
+                        .uikit-section-item__text title--xxl
+                        h1.title.title--xxl Feel in home!..
+                .uikit-section-item
+                    h2.uikit-section-item__title Title XL
+                    .uikit-section-item-content
+                        .uikit-section-item__text title--xl
+                        h1.title.title--xl Feel in home!..
+                .uikit-section-item
+                    h2.uikit-section-item__title Title LG
+                    .uikit-section-item-content
+                        .uikit-section-item__text title--lg
+                        h1.title.title--lg Feel in home!..
+                .uikit-section-item
+                    h2.uikit-section-item__title Title MD
+                    .uikit-section-item-content
+                        .uikit-section-item__text title--md
+                        h1.title.title--md Feel in home!..
+                .uikit-section-item
+                    h2.uikit-section-item__title Title SM
+                    .uikit-section-item-content
+                        .uikit-section-item__text title--sm
+                        h1.title.title--xsm Feel in home!..
+                .uikit-section-item
+                    h2.uikit-section-item__title Title XS
+                    .uikit-section-item-content
+                        .uikit-section-item__text title--xs
+                        h1.title.title--xs Feel in home!..
+                .uikit-section-item
+                    h2.uikit-section-item__title Title With Shape
+                    .uikit-section-item-content
+                        .uikit-section-item__text .title--w-shape
+                        h1.title.title--xsm.title--w-shape Feel in home!..
+                .uikit-section-item
+                    h2.uikit-section-item__title Text Normal
+                    .uikit-section-item-content
+                        .uikit-section-item__text .text
+                        p.text Living in one of the largest cities in the country. To earn profits by renting, investing and reselling with higher returns 3 years later, as well as property like Istanbul.
+                .uikit-section-item
+                    h2.uikit-section-item__title Text Light
+                    .uikit-section-item-content
+                        .uikit-section-item__text .text--light
+                        p.text.text--light Living in one of the largest cities in the country. To earn profits by renting, investing and reselling with higher returns 3 years later, as well as property like Istanbul.
+                .uikit-section-item
+                    h2.uikit-section-item__title Text
+                    .uikit-section-item-content
+                        .uikit-section-item__text .text--white
+                        p.text.text--white Living in one of the largest cities in the country. To earn profits by renting, investing and reselling with higher returns 3 years later, as well as property like Istanbul.
+                .uikit-section-item
+                    h2.uikit-section-item__title Text White
+                    .uikit-section-item-content
+                        .uikit-section-item__text .text--light-white
+                        p.text.text--light-white Living in one of the largest cities in the country. To earn profits by renting, investing and reselling with higher returns 3 years later, as well as property like Istanbul.
+
+           
+
+
+
+
+
+
+
+            
+
+                
+

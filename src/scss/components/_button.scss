@@ -1,0 +1,225 @@
+.btn {
+  width: auto;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  user-select: none;
+  position: relative;
+  transition: $transition;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0 2rem;
+  //min-width: 23rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: .8rem;
+
+  @include bp(tablet-small) {
+    padding: 0 3rem;
+    font-size: 1.8rem;
+    height: 5.5rem;
+  }
+
+  &__text {
+  }
+  &--xl {
+    height: 10rem;
+  }
+
+ 
+
+
+ 
+
+  &--green {
+    background: $c-green;
+    border-color: $c-green;
+    color: $c-black;
+
+    &:hover,
+    &:focus {
+      background: darken($c-green, 5%);
+      border-color: darken($c-green, 5%);
+    }
+
+  }
+
+  &--transparent-white {
+    background: transparent;
+    color: $c-white;
+    border: 1px solid $c-green;
+
+    &:hover,
+    &:focus {
+      background: $c-green;
+      border-color: $c-green;
+      color: $c-black;
+    }
+  }
+
+  &--full {
+    display: flex;
+    width: 100%;
+  }
+
+  &--i {
+    min-width: unset;
+    width: 6rem;
+    height: 6rem;
+    padding: 0;
+    flex-shrink: 0;
+    font-size: 2rem;
+    @include bp(tablet-small) {
+      width: 5rem;
+      height: 5rem;
+      font-size: 1.8rem;
+    }
+
+    .btn {
+      &__icon {
+        height: 1em;
+      }
+    }
+
+    &.has-big-icon {
+      font-size: 3rem;
+    }
+  }
+
+
+
+
+  &--white {
+    background: #fff;
+    color: $c-black;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#fff, 2%);
+      color: $c-black;
+    }
+  }
+  &--black {
+    background: $c-black;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: darken($c-black, 2%);
+      color: #fff;
+    }
+  }
+  &-row {
+    display: flex;
+    align-items: center;
+    .btn + .btn {
+      margin-left: 2rem;
+    }
+  }
+
+  &--i {
+    &-left,
+    &-right {
+      min-width: unset;
+
+      .btn__icon {
+        position: absolute;
+        font-size: 1.7rem;
+        @include bp(tablet-small-under) {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &-left {
+      padding-left: 5.5rem;
+
+      .btn {
+        &__icon {
+          margin-right: 2rem;
+          left: 2.3rem;
+        }
+      }
+    }
+
+    &-right {
+      padding-right: 6rem;
+
+      .btn {
+        &__icon {
+          right: 1.4rem;
+          height: 2.7rem;
+          width: 2.7rem;
+          border: 1px solid #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.5rem;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    transition: $transition;
+  }
+
+  &__caret {
+    margin-left: 2rem;
+    font-size: 7px;
+    opacity: 0.5;
+    height: 1em;
+  }
+}
+
+.btn-group {
+  border-radius: 2.7rem;
+  overflow: hidden;
+  min-width: 22rem;
+  border: 1px solid $c-border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .btn {
+    border-radius: 0;
+    flex: 0 1 auto;
+    max-width: 33.3%;
+    width: 100%;
+    height: 5.4rem;
+    border: 0;
+
+    &:not(:last-child) {
+      border-right: 1px solid $c-border;
+    }
+
+    .btn__icon {
+      font-size: 1.4rem;
+    }
+  }
+
+  &--md {
+    border-radius: 2.4rem;
+
+    .btn {
+      height: 4.8rem;
+    }
+  }
+}
+
+
+
+.button-row {
+  .btn {
+    width: 100%;
+    min-width: unset;
+  }
+}
+.loadmore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

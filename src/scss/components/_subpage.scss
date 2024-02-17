@@ -1,0 +1,24 @@
+.subpage {
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+    @include bp(mobile){
+        padding-top: 0;
+        padding-bottom: 5rem;
+    }
+    &-intro {
+        padding-bottom: 10rem;
+        @include bp(mobile){
+            padding-bottom: 5rem;
+        }
+        &__text {
+            max-width: 100rem;
+        }
+    }
+    &--center{
+        .subpage-hero{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

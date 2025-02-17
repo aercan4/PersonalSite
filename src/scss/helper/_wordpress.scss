@@ -1,8 +1,9 @@
 input.wpcf7-not-valid,
 textarea.wpcf7-not-valid {
   border-bottom: 1px solid #cc0000 !important;
+
   //margin-bottom: 1.5rem !important;
-  & ~ .input__title{
+  &~.input__title {
     //font-size: 5rem;
     //top: 45%;
   }
@@ -23,14 +24,16 @@ textarea.wpcf7-not-valid {
   a:not(:last-child) {
     margin-right: 1rem !important;
   }
-  a{
-    path{
+
+  a {
+    path {
       transition: $transition;
     }
-    &:hover{
-      span{
-        svg{
-          path{
+
+    &:hover {
+      span {
+        svg {
+          path {
             //fill: $c-black;
             //background: #FFFFFF;
           }
@@ -49,29 +52,32 @@ textarea.wpcf7-not-valid {
   border-color: #E0E0E0 !important;
   color: $c-black !important;
   transition: $transition;
-  &:hover{
-    svg{
-      path{
-        
-      }
+
+  &:hover {
+    svg {
+      path {}
     }
   }
 }
 
-.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
-  padding: 2rem;
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+  padding: 1.3rem;
   color: #ffffff;
   font-weight: 500;
-  display: none;
   background: #8d0000;
   border: 0;
   margin-left: 0;
   margin-right: 0;
-  border-radius: 1rem !important;
+  border-radius: .8rem !important;
+  margin: 0 !important;
+  margin-top: 2rem !important;
+  height: auto !important;
+
 }
 
 .wpcf7 form.sent .wpcf7-response-output {
-  padding: 0 2rem;
+  padding: 1.3rem;
   color: $c-black;
   font-size: 1.4rem;
   font-weight: 600;
@@ -81,6 +87,9 @@ textarea.wpcf7-not-valid {
   margin-left: 0;
   margin-right: 0;
   border-radius: 0.8rem !important;
+  margin: 0 !important;
+  margin-top: 2rem !important;
+  height: auto !important;
 }
 
 .modal-map .acf-map {
@@ -88,7 +97,7 @@ textarea.wpcf7-not-valid {
 }
 
 .wpcf7-form-control-wrap {
-  .wpcf7-list-item-label{
+  .wpcf7-list-item-label {
     display: flex;
     align-items: center;
   }
@@ -110,15 +119,17 @@ textarea.wpcf7-not-valid {
   font-weight: 500;
   transform: translateY(-10px);
 }
+
 span {
-  &.wpcf7-not-valid-tip{
+  &.wpcf7-not-valid-tip {
     font-size: 1.2rem;
     font-weight: 500;
     transform: translateY(5px);
   }
 
 }
-.wpcf7-form-control{
+
+.wpcf7-form-control {
   //border: 1px solid #cc0000 !important;
 }
 
@@ -127,90 +138,116 @@ span {
   opacity: 0 !important;
   pointer-events: none !important;
 }
-.swal2-popup{
+
+.swal2-popup {
   padding: 3rem !important;
 }
-.swal2-title{
+
+.swal2-title {
   font-family: $font-family-base !important;
   color: #031B3B !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
 
 }
-.swal2-icon{
+
+.swal2-icon {
   margin: 0 auto !important;
 }
-.wpcf7-spinner{
+
+.wpcf7-spinner {
   //display: none;
 }
-.wpcf7-list-item{
-  label{
-    display: flex;
-  align-items: center;
-  cursor: pointer;
 
-  input{
-    // height: 3rem;
-    // width: 3rem;
-    // //accent-color: #DAE1FD;
-    // accent-color: white;
+.wpcf7-list-item {
+  label {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    //clip-path: circle(74% at 74% 50%);
+
+    input {
+      // height: 3rem;
+      // width: 3rem;
+      // //accent-color: #DAE1FD;
+      // accent-color: white;
+      cursor: pointer;
+      //clip-path: circle(74% at 74% 50%);
+    }
   }
-  }
-  &-label{
-    color: white;
+
+  &-label {
+    color: $c-black;
     font-size: 1.5rem;
     font-weight: bold;
     user-select: none;
     line-height: 1.3em;
     margin-left: 2rem;
-    height: 3rem;
   }
 }
-.wpcf7-form-control.wpcf7-acceptance{
-  input{
 
-  }
 
-}
-.wpcf7-acceptance{
+.wpcf7-acceptance {
 
 
 
   input[type="checkbox"] {
-     position: relative;
-     cursor: pointer;
-     padding: 0;
- }
- input[type="checkbox"]:before {
-     content: '';
-     margin-right: 10px;
-     display: inline-block;
-     width: 3rem;
-     height: 3rem;
-     background: #DAE1FD;
-     border-radius: 50%;
-     left: -0.6rem;
-    top: -0.6rem;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  input[type="checkbox"]:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: #fff;
+    border-radius: .5rem;
+    left: -1px;
+    top: -2px;
     position: absolute;
- }
- 
- 
+    border: 1px solid $c-border;
+    @include bp(desktop-m) {
+      top: -1px;
+    }
+
+    @include bp(laptop-s) {
+      height: 2.2rem;
+      width: 2.2rem;
+    }
+
+    @include bp(desktop) {
+      width: 2rem;
+      height: 2rem;
+      left: -.1rem;
+      top: -.1rem;
+    }
+
+    @include bp(mobile) {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+
+
   input[type="checkbox"]:checked:before {
-     background: #DAE1FD;
-     border-color: #DAE1FD;
- }
+    background: $c-green;
+    border-color: $c-green;
+  }
+
   input[type="checkbox"]:disabled {
-     color: #b8b8b8;
-     cursor: auto;
- }
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
   input[type="checkbox"]:disabled:before {
-     box-shadow: none;
-     background: #ddd;
- }
+    box-shadow: none;
+    background: #ddd;
+  }
+
   input[type="checkbox"]:checked:after {
-     content: '';
+    content: '';
     //  position: absolute;
     //  left: 5px;
     //  top: 8px;
@@ -220,20 +257,30 @@ span {
     //  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
     //  transform: rotate(45deg);
     background-image: url("../img/blue-tik.svg");
-    background-size: 1.6rem;
+    background-size: 1rem;
     background-repeat: no-repeat;
     background-position: 15% 18%;
     position: absolute;
     left: 0;
-    top: 0;
+    top: -1px;
     width: 1em;
     height: 1em;
     font-size: 3rem;
- }
- 
- 
-  span.wpcf7-list-item{
-    margin: 1rem 0 1rem 0;
- }
- 
- }
+
+    @include bp(desktop) {
+      top: 0;
+      background-position: 19% 18%;
+    }
+
+    @include bp(mobile) {
+      background-position: 15% 18%;
+
+    }
+  }
+
+
+  span.wpcf7-list-item {
+    margin: 0 0 2rem 0;
+  }
+
+}

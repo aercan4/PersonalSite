@@ -222,11 +222,12 @@ span {
       height: 2rem;
       left: -.1rem;
       top: -.1rem;
+
     }
 
     @include bp(mobile) {
-      width: 1.8rem;
-      height: 1.8rem;
+      left: 0;
+      top: 0;
     }
   }
 
@@ -273,7 +274,7 @@ span {
     }
 
     @include bp(mobile) {
-      background-position: 15% 18%;
+      background-position: 21% 22%;
 
     }
   }

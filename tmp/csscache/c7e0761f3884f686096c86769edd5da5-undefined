@@ -3375,8 +3375,8 @@ span.wpcf7-not-valid-tip {
       top: -.1rem; } }
   @media (max-width: 576px) {
     .wpcf7-acceptance input[type="checkbox"]:before {
-      width: 1.8rem;
-      height: 1.8rem; } }
+      left: 0;
+      top: 0; } }
 
 .wpcf7-acceptance input[type="checkbox"]:checked:before {
   background: #9bedad;
@@ -3409,7 +3409,7 @@ span.wpcf7-not-valid-tip {
       background-position: 19% 18%; } }
   @media (max-width: 576px) {
     .wpcf7-acceptance input[type="checkbox"]:checked:after {
-      background-position: 15% 18%; } }
+      background-position: 21% 22%; } }
 
 .wpcf7-acceptance span.wpcf7-list-item {
   margin: 0 0 2rem 0; }

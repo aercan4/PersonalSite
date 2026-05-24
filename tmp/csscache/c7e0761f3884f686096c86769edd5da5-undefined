@@ -2687,8 +2687,7 @@ textarea[data-autoheight="true"] {
   -webkit-transition: opacity .8s ease, -webkit-transform .8s ease;
   transition: opacity .8s ease, -webkit-transform .8s ease;
   transition: opacity .8s ease, transform .8s ease;
-  transition: opacity .8s ease, transform .8s ease, -webkit-transform .8s ease;
-  will-change: transform, opacity; }
+  transition: opacity .8s ease, transform .8s ease, -webkit-transform .8s ease; }
   .animate.animated {
     opacity: 1;
     -webkit-transform: none !important;

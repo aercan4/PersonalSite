@@ -3,7 +3,6 @@
     transition:
         opacity .8s ease,
         transform .8s ease;
-    will-change: transform, opacity;
 
     &.animated {
         opacity: 1;

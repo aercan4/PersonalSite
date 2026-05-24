@@ -34,13 +34,8 @@
         }
     }
     .title--w-shape img{
-        @include bp(tablet){
-            transform: translateY(100%) rotate(84deg) scale(1,-1);
-            right: 2rem;
-        }
         @include bp(mobile){
             height: 12rem;
-            bottom: 0;
         }
     }
 }

@@ -5,27 +5,24 @@ html, body {
 }
 
 html {
+  font-size: 10px;
 
-  font-size: 9px;
-  @include bp(r-desktop-l){
+  @include bp(r-desktop-l) {
     font-size: 10px;
   }
-  @include bp(desktop-ml) {
-    //font-size: 9px;
+
+  @include bp(laptop) {
+    font-size: 9px;
   }
-  @include bp(desktop-m) {
-    font-size: 8px;
-  }
-  // @include bp(laptop) {
-  //   font-size: 7px;
-  // }
-  @include bp(laptop-s) {
+
+  @include bp(desktop) {
     font-size: 7px;
   }
 
   @include bp(tablet) {
     font-size: 8px;
   }
+
   @include bp(mobile-x-small) {
     font-size: 7px;
   }
@@ -51,36 +48,15 @@ body {
 
 .container {
   max-width: var(--container-width);
-  &--large{
-    padding: 0 var(--container-large-padding);
-    
-  }
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 
-  &--medium {
-    max-width: var(--container-medium-width);
-    @include bp(desktop) {
-      max-width: var(--container-width);
-    }
-  }
-
-  &--small {
-    max-width: var(--container-small-width);
-    @include bp(desktop) {
-      max-width: var(--container-width);
-    }
-  }
-
-  &--xsmall {
-    max-width: var(--container-xsmall-width);
-    @include bp(desktop) {
-      max-width: var(--container-width);
-    }
-  }
-
-  &--mobile-full {
-    @include bp(tablet-small) {
-      padding: 0;
-    }
+  @include bp(tablet) {
+    max-width: 100%;
+    padding-left: var(--container-gutter);
+    padding-right: var(--container-gutter);
   }
 }
 

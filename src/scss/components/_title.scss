@@ -137,8 +137,11 @@
     img{
       position: absolute;
       right: 0;
-      bottom: -2rem;
-      transform: translateY(100%) rotate(-10deg);
+      bottom: -15rem;
+
+      @include bp(mobile) {
+        bottom: -10rem;
+      }
     }
   }
   &--w-icon {

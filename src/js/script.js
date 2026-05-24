@@ -87,67 +87,46 @@ var app = {
       }
     });
   },
-  // formValidation() {
-  //   $("#contactForm").validate({
-  //     submitHandler: function (form) {
-  //       // console.log(form)
-  //       // $('#contactFormLoader').css('display', 'flex');
 
-  //       $.post("send.php", $(form).serialize())
-  //         .fail(function () {
-  //           // $('#contactFormLoader').hide();
 
-  //           // Swal.fire({
-  //           //     title: 'Error!',
-  //           //     text: "Unespected error. Please try later",
-  //           //     icon: 'error',
-  //           //     confirmButtonText: 'Close'
-  //           // }).then((result) => {
-  //           //     // Reload the Page
-  //           //     location.reload();
-  //           // });
-  //         })
-  //         .done(function (data) {
-  //           // $('#contactFormLoader').hide();
-
-  //           if (!data.error) {
-  //             $(form).trigger("reset");
-  //             // $('#contactFormContent').hide();
-  //             // $('#contactThankYouContent').show();
-  //           } else {
-  //             // Swal.fire({
-  //             //     title: 'Error!',
-  //             //     text: data.message,
-  //             //     icon: 'error',
-  //             //     confirmButtonText: 'Close'
-  //             // }).then((result) => {});
-  //           }
-  //         });
-  //     }
-  //   });
-  // },
-
+  animationFn() {
+    const animatedItems = document.querySelectorAll(".animate");
+  
+    if (!animatedItems.length) return;
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const delay = entry.target.dataset.delay || 0;
+  
+            setTimeout(() => {
+              entry.target.classList.add("animated");
+            }, delay);
+  
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+  
+    animatedItems.forEach((item) => {
+      observer.observe(item);
+    });
+  },
 
 
   init: function () {
     app.setWindowHeight();
     app.swiperFn();
     app.mobileMenuOpenFn();
-    // app.formValidation();
+    app.animationFn();
   },
 };
 
 $(function () {
   app.init();
 });
-
-
-
-
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   let forms = document.querySelectorAll('.wpcf7-form');
-//   forms.forEach(form => {
-//       form.setAttribute("action", "");
-//   });
-// });

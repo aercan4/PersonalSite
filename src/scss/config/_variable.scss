@@ -99,242 +99,29 @@ $transition-slow: .6s cubic-bezier(.21,1.09,1,.99);
 
 
   --font-size-text: 1.8rem;
-  --box-padding-lr: 7.6rem;
-  --box-padding-tb: 7.6rem;
-
-
-
-
-  --box-radius: 3.6rem;
-  --input-height: 6.4rem;
-
-  --container-small-padding: 16rem;
-  --tab-color: #{$c-blue};
-  --nav-height: 10rem;
-  --content-color: #{$c-text};
-
-  --swiper-theme-color: $c-black;
-  --swiper-pagination-color: $c-black;
-  --menu-item-color: 255, 255, 255;
-  --subpage-items-color: 255, 255, 255;
-
-
-
   --header-height: 11rem;
-  --title-padding: 1.5rem;
-  --title-radius: 2.2rem;
-  --button-br: 1.8rem;
-  --content-gutter: 10rem;
   --container-gutter: 16px;
   --container-pusher: calc((100vw - var(--container-width)) / 2);
 
+  --container-width: 128rem;
+  
 
-  --container-width: 140rem;
-  --container-medium-padding: 9rem;
-  --container-small-width: 145rem;
-  --container-medium-width: 150rem;
-  --container-xsmall-width: 132rem;
-
-  --container-large-padding : 11rem;
-  --activity-image-height: 45rem;
-  --activity-detail-padding: 12.2rem;
-  --news-image-height: 32rem;
-  --news-content-gutter: 13.8rem;
-  --header-item-gutter: 1rem;
-  --intro-slider-duration: 1s;
-  --video-btn-width: 38rem;
-  --box-height: 32rem;
-  --media-detail-gallery-item-height: 50rem;
-  --media-item-height: 50rem;
-  --register-content-padding: 16.4rem;
-  --form-content-padding: 7.2rem;
-  --count-item-padding: 10rem;
-  // 150 * 9px = 1350px -> laptop-s
-  @media (min-width: 576px) {
-    --container-width: 540px;
-  }
-
-  @media (min-width: 768px) {
-    --container-width: 720px;
-  }
-  @media (min-width: 992px) {
-    --container-width: 960px;
-  }
-  @media (min-width: 1200px) {
-    --container-width: 1150px;
-    //--container-width: 100rem;
-    
-  }
-  @include bp(r-laptop-s) {
-    --container-width: 145rem;
-  }
-  @include bp(r-laptop) {
-    --container-width: 145rem;
-  }
-  // 170 * 9px = 1530px -> desktop-m
-  @include bp(r-desktop-m) {
-    //--container-width: 120rem;
-  }
-  @include bp(r-desktop-ml) {
-    //--container-width: 155rem;
-    --container-width: 155rem;
-
-  }
-  // @include bp(r-desktop-ml) {
-  //   --container-width: 165rem;
-  // }
-  @include bp(r-desktop-l) {
-    --container-width: 160rem;
-  }
-  @media (min-width: 2561px) {
-    //--container-width: 220rem;
-
-  }
-
-  @include bp(desktop-m) {
-    --container-xsmall-padding: 13.8rem;
-    --container-medium-padding: 9rem;
-    --container-small-width: 145rem;
-    --container-medium-width: 150rem;
-    --container-xsmall-width: 140rem;
-
-  }
-  @include bp(laptop) {
-  }
-  @include bp(laptop-s) {
-    --search-category-width: 200px;
-  }
+ 
 
 
-  @include bp(desktop) {
-    --content-gutter: 0;
-    --slider-image-width: 14rem;
-    --font-size-title--xxl: 5.5rem;
-    --font-size-title--xl: 5rem;
-    --font-size-title--mlg: 3.4rem;
-    --font-size-title--xmd: 3.5rem;
-    --font-size-title--md: 3.5rem;
-    --font-size-title--sm: 3rem;
-    --font-size-title--xsm: 2.2rem;
-    --font-size-title--xs: 1.8rem;
-    --font-size-title--xxs: 1.6rem;
-    --font-size-toptitle: 1.8rem;
-    --container-medium-padding: var(--container-gutter);
-    --container-small-padding: var(--container-gutter);
-    --container-large-padding: var(--container-gutter);
-
-    --info-content-gutter: 7rem;
-    --container-xsmall-padding: 8rem;
-    --box-height: 28rem;
-    --media-item-height: 40rem;
-    --news-content-gutter: 8.8rem;
-    --form-content-padding: 6rem;
-    --box-padding-lr: 5.6rem; // buraya yazdım.
-    --box-padding-tb: 5.6rem;
-
-  }
   @include bp(tablet) {
-    --font-size-title--lg: 3rem;
-    --box-radius: 2.4rem;
-    --font-size-text: 2rem;
+    
 
-    --activity-image-height: 30rem;
-    --container-xsmall-padding: var(--container-gutter);
-    --media-detail-gallery-item-height: 34rem;
-    --media-item-height: 34rem;
-    --register-content-padding: 0rem;
-    --news-image-height: 24rem;
-    --news-content-gutter: 6rem;
-    --form-box-padding-lr: 4rem;
-    --form-box-padding-tb: 3.8rem;
-    --font-size-title--xxxl: 7.2rem;
-    --box-padding-lr: 3.6rem; // buraya yazdım.
-    --box-padding-tb: 3.6rem;
-    --font-size-title--md: 2.5rem;
-    --header-height: 14rem;
-
-  }
-  @include bp(tablet-small-under) {
-    --font-size-title--lg: 2.4rem;
-    --font-size-title--mlg: 2.8rem;
-    --font-size-title--md: 2.3rem;
-    --font-size-title--sm: 2.1rem;
-
-    --font-size-title--xxl: 4rem;
-    --font-size-title--xl: 26px;
-    --font-size-title--xmd: 3rem;
-    --font-size-title--xsm: 2.2rem;
-    --font-size-title--xs: 1.8rem;
-    --font-size-title--xxs: 1.6rem;
-    --font-size-toptitle: 16px;
-    --search-category-width: 100%;
-    --media-detail-gallery-item-height: 26rem;
-    --button-br: 1.4rem;
-    --count-item-padding: 8rem;
-
-
-  }
-  @include bp(tablet-small){
-    --font-size-title--xxl: 4.5rem;
-    //--font-size-title--sm: 2rem;
-    --font-size-title--xl: 4rem;
-    --font-size-title--md: 2.5rem;
   }
   @include bp(mobile) {
-    --container-gutter: 25px;
-    --media-detail-gallery-item-height: calc((100vw - (var(--container-gutter) * 2) - 16px) / 2);
-    --news-content-gutter: 3rem;
-    --container-pusher: 0px;
-    --count-item-padding: 6rem;
-    --box-padding-lr: var(--container-gutter); // buraya yazdım.
-    --box-padding-tb: 3.6rem;
-    --font-size-title--xl: 3rem;
-    --form-box-padding-lr: var(--container-gutter);
-    --form-box-padding-tb: 4.8rem;
-    --font-size-title--xxxl: 4.5rem;
-    --find-job-box-tb: 3.2rem;
-    --find-job-box-lr: var(--container-gutter);
-    // --font-size-title--md: 2.4rem;
-     --font-size-title--lg: 2.5rem;
-    --font-size-title--xxl: 4rem;
-    --font-size-text: 1.8rem;
-     --font-size-title--sm: 2.2rem;
-    // --font-size-title--xsm: 2rem;
-     --font-size-title--mlg: 2.3rem;
-     --font-size-title--xsm: 2rem;
-     --card-radius: 2.6rem;
+    
+    --font-size-title--xl: 2.6rem;
 
+    --font-size-text: 1.5rem;
 
+    --font-size-title--md: 2rem;
 
-
-
-  }
-  @include bp(mobile-small) {
-    --activity-image-height: 200px;
-    --activity-detail-padding: var(--container-gutter);
-    --box-height: 24rem;
-    --form-content-padding: 4rem;
-    --form-box-padding-lr: var(--container-gutter);
-    --form-box-padding-tb: 2.8rem;
-    --box-padding-lr: var(--container-gutter); // buraya yazdım.
-    --box-padding-tb: 3.6rem;
-
-  }
-  @include bp(mobile-l-small) {
-    --media-item-height: 30rem;
-  --form-content-padding: var(--container-gutter);
-    --news-content-gutter: var(--container-gutter);
-    --font-size-title--sm: 1.9rem;
-
-  }
-  @include bp(mobile-m-small) {
-    --count-item-padding: 4rem;
-    --form-box-padding-lr: 2rem;
-    --form-box-padding-tb: 2.8rem;
-  }
-  @include bp(mobile-x-small) {
-    --container-gutter: 16px;
-
+    --font-size-title--lg: 2.6rem;
   }
 }
 

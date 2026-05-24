@@ -1,0 +1,32 @@
+.animate {
+    opacity: 0;
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+    will-change: transform, opacity;
+
+    &.animated {
+        opacity: 1;
+        transform: none !important;
+    }
+
+    &.fadeUp {
+        transform: translateY(40px);
+    }
+
+    &.fadeDown {
+        transform: translateY(-40px);
+    }
+
+    &.fadeLeft {
+        transform: translateX(-40px);
+    }
+
+    &.fadeRight {
+        transform: translateX(40px);
+    }
+
+    &.zoomIn {
+        transform: scale(.9);
+    }
+}

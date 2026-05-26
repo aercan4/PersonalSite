@@ -410,8 +410,7 @@ button {
     pointer-events: all;
     -webkit-transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74);
     transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74);
-    margin: 0 rem(7) !important;
-    border-radius: 0; }
+    margin: 0 rem(7) !important; }
     @media (max-width: 576px) {
       .swiper-pagination-bullet {
         height: rem(3);
@@ -497,16 +496,13 @@ button {
   gap: 2rem; }
   .swiper-arrows .swiper-button-prev {
     left: unset;
-    border-radius: var(--button-br) 0 0 var(--button-br);
     margin-right: 1px; }
     .swiper-arrows .swiper-button-prev:not(.swiper-button-disabled):hover span, .swiper-arrows .swiper-button-prev:not(.swiper-button-disabled):focus span {
       -webkit-transform: translateX(-3px) scale(1, 1) translateZ(0);
               transform: translateX(-3px) scale(1, 1) translateZ(0); }
-  .swiper-arrows .swiper-button-next {
-    border-radius: 0 var(--button-br) var(--button-br) 0; }
-    .swiper-arrows .swiper-button-next:not(.swiper-button-disabled):hover span, .swiper-arrows .swiper-button-next:not(.swiper-button-disabled):focus span {
-      -webkit-transform: translateX(3px) scale(1, 1) translateZ(0);
-              transform: translateX(3px) scale(1, 1) translateZ(0); }
+  .swiper-arrows .swiper-button-next:not(.swiper-button-disabled):hover span, .swiper-arrows .swiper-button-next:not(.swiper-button-disabled):focus span {
+    -webkit-transform: translateX(3px) scale(1, 1) translateZ(0);
+            transform: translateX(3px) scale(1, 1) translateZ(0); }
 
 .fade-slider {
   overflow: visible !important; }
@@ -680,8 +676,7 @@ button {
   height: 40px;
   -webkit-transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74);
   transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74);
-  cursor: pointer;
-  border-radius: 20px; }
+  cursor: pointer; }
   .modal-video-close-btn:hover, .modal-video-close-btn:focus {
     background-color: #9bedad;
     outline: 0; }
@@ -1340,7 +1335,7 @@ textarea.wpcf7-not-valid {
   border: 0;
   margin-left: 0;
   margin-right: 0;
-  border-radius: .8rem !important;
+  border-radius: 0 !important;
   margin: 0 !important;
   margin-top: 2rem !important;
   height: auto !important; }
@@ -1357,10 +1352,11 @@ textarea.wpcf7-not-valid {
   border: 0;
   margin-left: 0;
   margin-right: 0;
-  border-radius: 0.8rem !important;
+  border-radius: 0 !important;
   margin: 0 !important;
   margin-top: 2rem !important;
-  height: auto !important; }
+  height: auto !important;
+  line-height: 1.5; }
 
 .modal-map .acf-map {
   height: 100% !important; }
@@ -1437,7 +1433,6 @@ span.wpcf7-not-valid-tip {
   width: 1.8rem;
   height: 1.8rem;
   background: #fff;
-  border-radius: .5rem;
   left: -1px;
   top: -2px;
   position: absolute;
@@ -1736,8 +1731,7 @@ span.wpcf7-not-valid-tip {
   padding: 0 2rem;
   cursor: pointer;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: .8rem; }
+          box-sizing: border-box; }
   @media (max-width: 768px) {
     .btn {
       padding: 0 3rem;
@@ -1829,8 +1823,7 @@ span.wpcf7-not-valid-tip {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      font-size: 1.5rem;
-      border-radius: 50%; }
+      font-size: 1.5rem; }
   .btn__icon {
     -webkit-transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74);
     transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74); }
@@ -1839,42 +1832,6 @@ span.wpcf7-not-valid-tip {
     font-size: 7px;
     opacity: 0.5;
     height: 1em; }
-
-.btn-group {
-  border-radius: 2.7rem;
-  overflow: hidden;
-  min-width: 22rem;
-  border: 1px solid rgba(53, 66, 97, 0.1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .btn-group .btn {
-    border-radius: 0;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
-    max-width: 33.3%;
-    width: 100%;
-    height: 5.4rem;
-    border: 0; }
-    .btn-group .btn:not(:last-child) {
-      border-right: 1px solid rgba(53, 66, 97, 0.1); }
-    .btn-group .btn .btn__icon {
-      font-size: 1.4rem; }
-  .btn-group--md {
-    border-radius: 2.4rem; }
-    .btn-group--md .btn {
-      height: 4.8rem; }
-
-.button-row .btn {
-  width: 100%;
-  min-width: unset; }
 
 .loadmore {
   display: -webkit-box;
@@ -1988,16 +1945,10 @@ span.wpcf7-not-valid-tip {
           -ms-transform: scale(1.2);
               transform: scale(1.2); }
   .job-item-img {
-    height: 16rem;
-    padding: 6rem;
-    width: 20rem;
+    height: 17rem;
+    width: 17rem;
     margin-left: auto;
     margin-right: auto; }
-    @media (max-width: 576px) {
-      .job-item-img {
-        height: 12rem;
-        padding: 4rem;
-        width: 17rem; } }
     .job-item-img img {
       height: 100%;
       width: 100%;
@@ -2078,8 +2029,7 @@ span.wpcf7-not-valid-tip {
 
 .box {
   background: #fff;
-  padding: 5rem;
-  border-radius: 1rem; }
+  padding: 5rem; }
   @media (max-width: 576px) {
     .box {
       padding: 2.5rem; } }
@@ -2131,7 +2081,6 @@ span.wpcf7-not-valid-tip {
     position: relative;
     margin: 0;
     cursor: pointer;
-    border-radius: 2.1rem;
     background-color: #E6E9ED;
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -2146,8 +2095,7 @@ span.wpcf7-not-valid-tip {
       position: absolute;
       left: .4rem;
       top: .4rem;
-      background-color: #030303;
-      border-radius: 50%; }
+      background-color: #030303; }
   .switch-content {
     margin-left: 3.4rem; }
     @media (max-width: 768px) {
@@ -2213,7 +2161,6 @@ span.wpcf7-not-valid-tip {
     .checkbox__input:not(:checked):hover ~ .tick-checkbox-content .tick-checkbox__title {
       color: rgba(31, 38, 58, 0.8); }
   .checkbox--big .checkbox__toggle {
-    border-radius: .2rem;
     margin-right: 2rem; }
   .checkbox--radio .checkbox__input ~ span {
     background: transparent;
@@ -2229,7 +2176,6 @@ span.wpcf7-not-valid-tip {
               transform: translate(-48%, -52%);
       width: 1em;
       height: 1em;
-      border-radius: 50%;
       background: #278EFF;
       -webkit-transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74);
       transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74);
@@ -2242,13 +2188,11 @@ span.wpcf7-not-valid-tip {
     .checkbox--radio .checkbox__input:checked ~ span::after {
       opacity: 1; }
   .checkbox--radio .checkbox__toggle {
-    border-radius: 50%;
     font-size: 18px; }
   .checkbox__toggle {
     outline: none;
     height: 1em;
     width: 1em;
-    border-radius: 6px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -2628,7 +2572,6 @@ textarea[data-autoheight="true"] {
       width: 1em;
       height: 1em;
       font-size: 17px;
-      border-radius: 50%;
       position: absolute;
       left: -2rem;
       top: -.5rem;
@@ -2649,6 +2592,16 @@ textarea[data-autoheight="true"] {
 .content iframe {
   width: 100%;
   height: 60rem; }
+
+.content img {
+  float: left;
+  margin-right: 3rem; }
+  @media (max-width: 991px) {
+    .content img {
+      float: unset;
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 3rem; } }
 
 .social {
   display: -webkit-box;
@@ -2865,7 +2818,6 @@ textarea[data-autoheight="true"] {
       height: 2px;
       background: #ffffff;
       width: 100%;
-      border-radius: 1rem;
       -webkit-transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74);
       transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74); }
     .header .header-menu-opener.active span:nth-child(2) {

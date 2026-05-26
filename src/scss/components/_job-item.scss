@@ -15,16 +15,10 @@
         }
     }
     &-img {
-        height: 16rem;
-        padding: 6rem;
-        width: 20rem;
+        height: 17rem;
+        width: 17rem;
         margin-left: auto;
         margin-right: auto;
-        @include bp(mobile) {
-            height: 12rem;
-            padding: 4rem;
-            width: 17rem;
-        }
         img {
             height: 100%;
             width: 100%;

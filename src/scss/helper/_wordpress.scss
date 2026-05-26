@@ -69,7 +69,7 @@ textarea.wpcf7-not-valid {
   border: 0;
   margin-left: 0;
   margin-right: 0;
-  border-radius: .8rem !important;
+  border-radius: 0 !important;
   margin: 0 !important;
   margin-top: 2rem !important;
   height: auto !important;
@@ -86,10 +86,11 @@ textarea.wpcf7-not-valid {
   border: 0;
   margin-left: 0;
   margin-right: 0;
-  border-radius: 0.8rem !important;
+  border-radius: 0 !important;
   margin: 0 !important;
   margin-top: 2rem !important;
   height: auto !important;
+  line-height: 1.5;
 }
 
 .modal-map .acf-map {
@@ -203,7 +204,6 @@ span {
     width: 1.8rem;
     height: 1.8rem;
     background: #fff;
-    border-radius: .5rem;
     left: -1px;
     top: -2px;
     position: absolute;

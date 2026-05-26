@@ -32,7 +32,6 @@
     pointer-events: all;
     transition: $transition;
     margin: 0 rem(7) !important;
-    border-radius: 0;
     @include bp(mobile){
       height: rem(3);
       margin: 0 rem(4) !important;
@@ -149,7 +148,6 @@
 
   .swiper-button-prev {
     left: unset;
-    border-radius: var(--button-br) 0 0 var(--button-br);
     margin-right: 1px;
 
     &:not(.swiper-button-disabled):hover,
@@ -161,7 +159,6 @@
   }
 
   .swiper-button-next {
-    border-radius: 0 var(--button-br) var(--button-br) 0;
 
     &:not(.swiper-button-disabled):hover,
     &:not(.swiper-button-disabled):focus {

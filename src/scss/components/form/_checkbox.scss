@@ -59,7 +59,6 @@
   
   &--big{
     .checkbox__toggle{
-      border-radius: .2rem;
       margin-right: 2rem;
     }
   }
@@ -81,7 +80,6 @@
             transform: translate(-48%, -52%);
             width: 1em;
             height: 1em;
-            border-radius: 50%;
             background: $c-blue;
             transition: $transition;
             opacity: 0;
@@ -102,7 +100,6 @@
       }
 
       &__toggle {
-        border-radius: 50%;
         font-size: 18px;
       }
     }
@@ -112,7 +109,6 @@
     outline: none;
     height: 1em;
     width: 1em;
-    border-radius: 6px;
     display: inline-flex;
     position: relative;
     margin: 0;

@@ -200,7 +200,6 @@ button {
   height: 40px;
   transition: $transition;
   cursor: pointer;
-  border-radius: 20px;
 
   &:hover, &:focus {
     background-color: $c-green;

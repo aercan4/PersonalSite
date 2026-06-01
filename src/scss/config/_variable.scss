@@ -115,13 +115,12 @@ $transition-slow: .6s cubic-bezier(.21,1.09,1,.99);
   }
   @include bp(mobile) {
     
-    --font-size-title--xl: 2.6rem;
+    --font-size-title--xl: 3rem;
 
-    --font-size-text: 1.5rem;
 
-    --font-size-title--md: 2rem;
+    --font-size-title--md: 2.5rem;
 
-    --font-size-title--lg: 2.6rem;
+    --font-size-title--lg: 3rem;
   }
 }
 

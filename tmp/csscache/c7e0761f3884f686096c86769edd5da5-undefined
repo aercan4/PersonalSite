@@ -22,10 +22,9 @@
   --container-width: 128rem; }
   @media (max-width: 576px) {
     :root {
-      --font-size-title--xl: 2.6rem;
-      --font-size-text: 1.5rem;
-      --font-size-title--md: 2rem;
-      --font-size-title--lg: 2.6rem; } }
+      --font-size-title--xl: 3rem;
+      --font-size-title--md: 2.5rem;
+      --font-size-title--lg: 3rem; } }
 
 *,
 *::before,
@@ -1961,11 +1960,8 @@ span.wpcf7-not-valid-tip {
       .job-item-content {
         padding: 2rem; } }
   .job-item--big .job-item-img {
-    padding: 2rem;
-    height: 20rem; }
-    @media (max-width: 576px) {
-      .job-item--big .job-item-img {
-        padding: 1rem; } }
+    height: 20rem;
+    width: 20rem; }
 
 .section-head {
   display: -webkit-box;

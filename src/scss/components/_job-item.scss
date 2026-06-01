@@ -35,11 +35,8 @@
 
     &--big {
         .job-item-img {
-            padding: 2rem;
             height: 20rem;
-            @include bp(mobile){
-                padding: 1rem;
-            }
+            width: 20rem;
         }
     }
 }

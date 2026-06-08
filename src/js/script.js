@@ -119,11 +119,25 @@ var app = {
   },
 
 
+  preloaderFn() {
+    window.addEventListener("load", function () {
+      const preloader = document.querySelector(".preloader");
+    
+      if (!preloader) return;
+    
+      setTimeout(() => {
+        preloader.classList.add("hide");
+      }, 300); // küçük bir delay daha smooth his verir
+    });
+  },
+
+
   init: function () {
     app.setWindowHeight();
     app.swiperFn();
     app.mobileMenuOpenFn();
     app.animationFn();
+    app.preloaderFn();
   },
 };
 
